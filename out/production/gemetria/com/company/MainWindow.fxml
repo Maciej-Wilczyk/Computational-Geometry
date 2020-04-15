@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.MainWindow">
+   <children>
+      <Canvas fx:id="canvas" height="600.0" layoutY="0.0" width="600.0" />
+      <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="614.0" prefHeight="49.0" prefWidth="252.0">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Button fx:id="zad1" layoutX="300.0" layoutY="626.0" mnemonicParsing="false" onAction="#zadanie1" prefHeight="25.0" prefWidth="62.0" text="pkt-line" />
+      <Button fx:id="zad2" layoutX="375.0" layoutY="626.0" mnemonicParsing="false" onAction="#zadanie2" prefHeight="25.0" prefWidth="62.0" text="pkt-trian" />
+      <Button fx:id="zad3" layoutX="455.0" layoutY="626.0" mnemonicParsing="false" onAction="#zadanie3" prefHeight="25.0" prefWidth="62.0" text="pkt-pol" />
+      <Button fx:id="zad4" layoutX="524.0" layoutY="626.0" mnemonicParsing="false" onAction="#zadanie4" prefHeight="25.0" prefWidth="62.0" text="line-circ" />
+      <Polygon fx:id="trianglefx" fill="#1f96ff30" layoutX="0" layoutY="0" stroke="BLACK" strokeType="INSIDE">
+        <points>
+
+        </points>
+      </Polygon>
+      <Circle fx:id="circlefx" fill="#1f93ff40" layoutX="300" layoutY="300" radius="0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="pktButton" layoutX="300.0" layoutY="663.0" mnemonicParsing="false" onAction="#pktDraw" prefHeight="25.0" prefWidth="62.0" text="pkt" />
+      <Button fx:id="lineButton" layoutX="375.0" layoutY="663.0" mnemonicParsing="false" onAction="#LineDraw" prefHeight="25.0" prefWidth="62.0" text="line" />
+      <Button fx:id="clearButton" layoutX="86.0" layoutY="655.0" mnemonicParsing="false" onAction="#clearPane" prefHeight="33.0" prefWidth="128.0" text="clear" />
+      <Label fx:id="label2" layoutX="222.0" layoutY="29.0" prefHeight="17.0" prefWidth="156.0" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+
+   </children>
+</AnchorPane>
